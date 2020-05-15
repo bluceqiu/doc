@@ -1,0 +1,381 @@
+<!doctype html>
+<div style="width: 1200px;margin: 0 auto;" class="lake-content-editor-core lake-engine lake-typography-classic" data-lake-element="root">
+    <h1>linux常用命令和常用目录作用</h1>
+  <h1 id="SVPQf" data-lake-id="d55d12c0f69c4c5dbec9aa81dd14286c_h1_0" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">基础概念</h1>
+  <h3 id="xOHWh" data-lake-id="de7decc3e5984871c456ba94cfab95d5_h3_0" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">posix</h3>
+  <ul data-lake-id="188157ad03c2784f4d4e242223fa8f3a_ul_0" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="59bfa90c838f69b16c511da8fe556c29_li_0">portable operation system interface of unix，<span class="lake-fontsize-12" data-mce-style="font-size: 12px" style="font-size: 16px;">POSIX标准定义了unix操作系统应该为应用程序提供的接口标准</span></li>
+  </ul>
+  <h3 id="O32DY" data-lake-id="bc74759b1bcea586edb7bd4a0199d29c_h3_1" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">宏内核：linux</h3>
+  <p data-lake-id="c2d33e615969712dec93e7a980e1c15d_p_0" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">微内核：windows NT</p>
+  <p data-lake-id="756f3aab0eb8e363e4904d15b9807ff7_p_1" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">安卓 -&gt; linux 裁剪过后的</p>
+  <p data-lake-id="2b2b3e7dc122d1502f582c0c8b7958d8_p_2" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p data-lake-id="279256938621c857170f48a3bd1e024a_p_3" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">centos：<span>yum&nbsp;install&nbsp;xxx-devel</span></p>
+  <p data-lake-id="24c631cf6b79a3a9eff87d1ffe3981ac_p_4" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">ubuntu：<span>apt-get&nbsp;isntall&nbsp;xxxx-dev</span></p>
+  <p data-lake-id="7467903a77e4c43e92d4f196903d0bbe_p_5" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span><br></span></p>
+  <p data-lake-id="797ac132bccf72d6104406b000bee6c9" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span><br></span></p>
+  <p data-lake-id="f23fb9c519ff30bfe03d0b2cc2cac85d_p_6" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h1 id="5Ov8Q" data-lake-id="3729eaa2b03cd67348afeea9266d1b21_h1_1" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">目录</h1>
+  <h3 id="r9Tqi" data-lake-id="c5570fb8ea795138c156cd1f98d98d1e_h3_2" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">/lib</h3>
+  <ul data-lake-id="59b195d678129a19a10a4229bca5aba8_ul_1" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="1b3cfc64a4f5c6fe697dcfb3bc918b3a_li_1">函数库</li>
+    <li data-lake-id="71976c3b58552e0fe18d7c3f7d5ce2b4_li_2">/lib/modules/&nbsp; 存放核心相关的模组</li>
+  </ul>
+  <h1 id="gETF0" data-lake-id="e28a7f51d135170eface32ad808275a8_h1_2" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">命令</h1>
+  <h3 data-lake-id="2bd1ad8d95334761cb96bdb02784441b" id="hERlG" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">nano</h3>
+  <ul data-lake-id="6baf4f56bb2fd84dbcf959cc76693abe" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="b9abdb90fe352e57f8b4d3a2b68f267f"><span class="lake-fontsize-10" style="color: rgb(51, 51, 51); font-size: 13px;" data-mce-style="font-size: 10px">符终端的文本编辑器</span></li>
+  </ul>
+  <h3 id="eEaEl" data-lake-id="3580cea1e03d69d4c661d8d6b846bcca_h3_3" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">ps</h3>
+  <ul data-lake-id="f532ef16f3e4d856afe83e626344d9bf_ul_2" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="66ce651334d1487c11419a6d1c9fc1e4_li_3">progress， 当前执行命令时刻所有运行的应用程序的状态</li>
+    <li data-lake-id="2c9555b1f812b4b50eb91adcec9dd11d">不好使啊， 开多个node子进程的时候，ps，没有显示出来呢</li>
+  </ul>
+  <h3 id="03qQT" data-lake-id="1153328eb6f46282ca833eed1923f763_h3_4" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">top</h3>
+  <ul data-lake-id="ca633fe27c7f73dc0a2e4ae402831dc2_ul_3" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="42c9df8c0db5f2ded9a6374abff890fa_li_4">正在运行的应用程序的实时状态</li>
+  </ul>
+  <h3 id="QOJ2N" data-lake-id="87a28a550b642a98afadc76986914510_h3_5" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">cat</h3>
+  <ul data-lake-id="fa771ba9f6b646cb72a098c5600dbf4b_ul_4" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="22e97ef87af0fbaeef1ec5256b7bbe7a_li_5">用于连接文件并打印到标准输出设备上</li>
+    <li data-lake-id="f5079424ef38abf43f301411c802f718_li_6">-n, <strong>--number</strong><span class="lake-fontsize-10" style="color: rgb(51, 51, 51); font-size: 13px;" data-mce-style="font-size: 10px">：由 1 开始对所有输出的行数编号。</span></li>
+    <li data-lake-id="a2918bd4da56145a9f1baa1514f4333b_li_7">-b，<strong>--number-nonblank</strong><span class="lake-fontsize-10" style="color: rgb(51, 51, 51); font-size: 13px;" data-mce-style="font-size: 10px">：和 -n 相似，只不过对于空白行不编号。</span></li>
+    <li data-lake-id="b075cb8319d147a82ded6f4523018ce7_li_8">-s,&nbsp;<strong>--squeeze-blank</strong><span class="lake-fontsize-10" style="color: rgb(51, 51, 51); font-size: 13px;" data-mce-style="font-size: 10px">：当遇到有连续两行以上的空白行，就代换为一行的空白行。</span></li>
+  </ul>
+  <h3 id="I86Lv" data-lake-id="6ad8567f5b0ab33e3cbbc52888db5408_h3_6" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">chown</h3>
+  <ul data-lake-id="63399048565897737df5c5f7a7da8520_ul_5" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="bcef9a5412652f933d19af04ee0cefd9_li_9">linux/unix 是多人多工操作系统，每个文件都有拥有者，chown用于奖指定文件的拥有者改为指定的用户或组， 用户可以是用户名或用户id，组可以是组名或组id</li>
+    <li data-lake-id="f725ef54455c4930bd693dc558cc8d3f_li_10">需要root权限</li>
+  </ul>
+  <h3 id="jGMkK" data-lake-id="f0773687abd03fcfdac198a3fb33223a_h3_7" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">date</h3>
+  <ul data-lake-id="f2801c5f5134919bfa7af16bbe7fa31e_ul_6" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="445e9196311ce989b3d1dbfd32ddada3_li_11">时间日期相关</li>
+    <li data-lake-id="5090dea2d701d364889eac53d73891c0_li_12">date</li>
+    <li data-lake-id="81930ae9b90f56b91f4982bc296b94a9_li_13">date "+%D" //&nbsp; 03/20/20</li>
+    <li data-lake-id="d2689fa8ca489936ebd249665a63f0c6_li_14">date "+%x" //&nbsp; 03/20/2020</li>
+    <li data-lake-id="0291cbc5de2b650c97dcd482d974505d_li_15"><span>date "+%X" //&nbsp; 05:08:27 PM</span></li>
+    <li data-lake-id="a21732054a6a7967e32b202624e3eed8_li_16"><span>date "+%c" //&nbsp;&nbsp;</span>Fri 20 Mar 2020 05:08:45 PM CST</li>
+  </ul>
+  <h3 id="viGfx" data-lake-id="b70511372893b15087035b2a79de13b8_h3_8" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">mv</h3>
+  <ul data-lake-id="38ffdaf8f4edb9e43f9c204b3612a07b_ul_7" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="a1c58f7a16488eb8e65249e5e03ca5ac_li_17">为文件或目录改名，或者将文件移入到指定的目录或位置</li>
+  </ul>
+  <h3 id="GUOrz" data-lake-id="cf17ce7e43edf08b5334b0172677b6f4_h3_9" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">mkdir</h3>
+  <ul data-lake-id="cc29b3b16a27451e05e0227294c0bda4_ul_8" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="c190d6864aa861a2e7ed467e416024f4_li_18">在当前路径下建立一个子目录</li>
+    <li data-lake-id="4bbd78f5c8be5b1b3885a97f1b3f8e33_li_19"><span style="color: #000000;">mkdir </span><span style="color: #666600;">-</span><span style="color: #000000;">p BBB</span><span style="color: #666600;">/</span><span style="color: #660066;">Test&nbsp; &nbsp;// -p&nbsp; 表示，如果BBB目录不存在，则创建一个，如果不加-p，则报错</span></li>
+  </ul>
+  <h3 id="XKrGe" data-lake-id="df5e677fc1cfa32ed404aa1ef2101fe0_h3_10" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;"><span>复制文件或目录</span></h3>
+  <ul data-lake-id="24ec745ad4c70d9c03e302ad5f65fa7b_ul_9" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="bb5f57f5d1e72c493aec29be24b5c5ab_li_20">-a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。</li>
+    <li data-lake-id="aa44b21b7d83d41e01ca0029e87fa12e_li_21">-d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。</li>
+    <li data-lake-id="f7644bedd6117f7015967d0cb831fe13_li_22">-f：覆盖已经存在的目标文件而不给出提示。</li>
+    <li data-lake-id="02cb827689210fcaba0bdf54e08cb973_li_23">-i：与-f选项相反，在覆盖目标文件之前给出提示，要求用户确认是否覆盖，回答"y"时目标文件将被覆盖。</li>
+    <li data-lake-id="6e515f235409f790a97ede3405972b77_li_24">-p：除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。</li>
+    <li data-lake-id="73f5ef20a42d03f2e8848b871fe48673_li_25">-r：若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。</li>
+    <li data-lake-id="a539ef180200c850f404a1df941134a9_li_26">-l：不复制文件，只是生成链接文件。</li>
+  </ul>
+  <h3 id="YfzOU" data-lake-id="343eef1d3b2b8925a955337cdcb87e65_h3_11" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">bash</h3>
+  <ul data-lake-id="4410a1a5d488c0088274b27903943de1_ul_10" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="44def8ca96ac18cd189d1047791936fb_li_27">执行shell 脚本</li>
+    <li data-lake-id="3d683b920feb2ed2810d4c7452663937_li_28">vi hello.sh&nbsp; // 创建新文件</li>
+  </ul>
+  <p data-lake-id="e1b0979b54c1fb29acc1d92ad2159922_p_7" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <div data-card-type="block" data-lake-card="codeblock" id="3yhXZ" data-language="bash">
+    <div class="lake-codeblock-content" style="border: 1px solid rgb(232, 232, 232); max-width: 750px; color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: rgb(249, 249, 249);">
+      <div class="" style="color: rgb(89, 89, 89); margin: 0px; padding: 16px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><pre class="cm-s-default" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="lake-preview-line" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="lake-preview-line-number lake-lm-pad-level-0" style="color: rgb(191, 191, 191); margin: 0px 8px 0px 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"></span><span class="lake-preview-codeblock-content" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">// hello.sh 文件
+</span></span><span class="lake-preview-line" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="lake-preview-line-number lake-lm-pad-level-0" style="color: rgb(191, 191, 191); margin: 0px 8px 0px 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"></span><span class="lake-preview-codeblock-content" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="cm-meta" style="color: rgb(31, 127, 154); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">#!/usr/bin/bash</span>
+</span></span><span class="lake-preview-line" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="lake-preview-line-number lake-lm-pad-level-0" style="color: rgb(191, 191, 191); margin: 0px 8px 0px 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"></span><span class="lake-preview-codeblock-content" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="cm-builtin" style="color: rgb(111, 66, 193); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">echo</span> <span class="cm-string" style="color: rgb(102, 153, 0); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">"Hello World!!"</span>
+</span></span><span class="lake-preview-line" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="lake-preview-line-number lake-lm-pad-level-0" style="color: rgb(191, 191, 191); margin: 0px 8px 0px 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"></span><span class="lake-preview-codeblock-content" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="cm-keyword" style="color: rgb(215, 58, 73); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">exit</span> <span class="cm-number" style="color: rgb(0, 92, 197); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">0</span></span></span></pre>
+      </div>
+    </div>
+  </div>
+  <p data-lake-id="92c8228235b93f7cc9ced6ac90fca3a6_p_8" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <div data-card-type="block" data-lake-card="codeblock" id="Hlkso" data-language="javascript">
+    <div class="lake-codeblock-content" style="border: 1px solid rgb(232, 232, 232); max-width: 750px; color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: rgb(249, 249, 249);">
+      <div class="" style="color: rgb(89, 89, 89); margin: 0px; padding: 16px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><pre class="cm-s-default" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="lake-preview-line" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="lake-preview-line-number lake-lm-pad-level-0" style="color: rgb(191, 191, 191); margin: 0px 8px 0px 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"></span><span class="lake-preview-codeblock-content" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="cm-error" style="color: rgb(255, 0, 0); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">#!/usr/bin/env node</span>
+</span></span><span class="lake-preview-line" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="lake-preview-line-number lake-lm-pad-level-0" style="color: rgb(191, 191, 191); margin: 0px 8px 0px 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"></span><span class="lake-preview-codeblock-content" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);"><span class="cm-keyword" style="color: rgb(215, 58, 73); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">var</span> <span class="cm-def" style="color: rgb(0, 92, 197); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">electron</span> <span class="cm-operator" style="color: rgb(215, 58, 73); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">=</span> <span class="cm-variable" style="color: rgb(89, 89, 89); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">require</span>(<span class="cm-string" style="color: rgb(102, 153, 0); margin: 0px; padding: 0px; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);">"./"</span>);</span></span></pre>
+      </div>
+    </div>
+  </div>
+  <p data-lake-id="eadc4ec477465f1f239730d987d394b1_p_9" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h3 id="edyR2" data-lake-id="eef72eb1923eef3bf4123ebc7193fa91_h3_12" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">执行hello.sh</h3>
+  <ul data-lake-id="41dcbc994a6f79db1f5b1bf1ab64cede_ul_11" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="4c87e42a14a8c3d3d6c031a3af3e26eb_li_29">bash hello.sh</li>
+    <li data-lake-id="c7aff5a91f365803fc03dcad0345581a_li_30">chmod 755 hello.sh -&gt; ./hello.sh</li>
+    <li data-lake-id="f970e0497eeca508b20ab167f4245e25_li_31">sh hello.sh</li>
+  </ul>
+  <p data-lake-id="042da541aac17f869693ba89ebd10d8e_p_10" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h3 id="xHj5R" data-lake-id="2691295e5d19327d5988ecd303465c68_h3_13" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">ll 是ls -l 的简写</h3>
+  <p data-lake-id="f1a83b4b996071e4671d1e48880e33ec_p_11" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">ctrl + s 暂停屏幕输出 -&gt; ctrl + q恢复屏幕输出</p>
+  <h3 data-lake-id="37d59b09c87fac57557851c5e6d85348" id="x6n5i" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 20px; line-height: 28px;">cp</h3>
+  <h2 data-lake-id="170eeeffb465a729a3a99db39c7d4438" id="NCf3k" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">ps aux</h2>
+  <ul data-lake-id="34d252a10b1510c20cecca137727013b" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="5ab5289adaed9bc4639f0ac151033b94">R/R+ // running</li>
+    <li data-lake-id="8a11be2bb668739d948944c9eca81bca">S/Ss&nbsp; // sleep</li>
+  </ul>
+  <h1 data-lake-id="5a36620336a0900655ffb632797c3ab6" id="rjNrQ" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">linux系统体系结构</h1>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="dabb5af4f31be43ce58687d77d1fe913" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">系统可裁剪</p>
+  </blockquote>
+  <ul data-lake-id="3f79243c68f427589e998190ad34935c" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="70b2d9fc13e57f285a26379751b7f429">进程管理系统</li>
+    <li data-lake-id="af15120f7391664fdac1b0e2ace1979b">内存管理系统</li>
+    <li data-lake-id="a46dc8aade5dfa2fdc0e30c0bb2c6639">文件管理系统</li>
+    <li data-lake-id="5a5e8c46f2884f8fd54d72f3d30e430e">设备驱动</li>
+    <li data-lake-id="5e8ae2b1da7b38dc2d6a450a33e168a0">网络系统</li>
+    <li data-lake-id="5b4a2de0241330567ac8b7a3d434021e">NAS</li>
+  </ul>
+  <h2 data-lake-id="8069fb1e80672155d4fbff76759e46a2" id="bY2Do" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">库后缀</h2>
+  <ul data-lake-id="9726f218863b4c70af2e9013db85627e" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="159f13e2aaf54219f586a8b8c81f4447">.lib 静态库</li>
+    <li data-lake-id="ea3772dc92776222761ac633c0184374">.so 动态库 - window：.dll</li>
+  </ul>
+  <h2 data-lake-id="7b612d6942c4a64dc6f0669c9ac367b5" id="8onB7" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">用户模式和内核模式</h2>
+  <ul data-lake-id="1a6d2b879cca5d68a6b63871a7a17dbc" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="acf2a81fa1aeb3a0e8607fd3880ab9d0">有系统调用就是内核模式</li>
+    <li data-lake-id="dc79e36f1b366dde403744a916d33250">没有系统调用就是用户模式</li>
+  </ul>
+  <h2 data-lake-id="6ef61517e935abbca318f623932aaf5c" id="wWo2L" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">常用路径</h2>
+  <ul data-lake-id="9fbb16b5d41c400425a5e62a1001f298" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="368159533b41e4cca68713566f6763fb">/etc/sysconfig/network-scripts</li>
+  </ul>
+  <ul data-lake-id="0ff5fa26d9c25518386a69d7586851b9" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="f0b88cff1489fb561b0c7321a5cf85b2" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="4a303e914dad1e3e85f389d598f539eb">ifcfg 配置文件</li>
+      <li data-lake-id="233651b4d025b004a5b409aa0a24ebd3">ifcfg -lo // localhost</li>
+      <li data-lake-id="b659ccd581963d35f657f785f6c26bd4">ifcfg-eth0&nbsp; // ONBOOT=YES 必须为yes才是激活网卡， eth0 这个设备名字不能改</li>
+      <li data-lake-id="fa4a196b1844ed810904e1ef83270393">netstat 查看网络状态，&nbsp; 在新的centos里面，netstat可能不存在，可以转net-tools工具</li>
+      <li data-lake-id="7979bef7bb03d6f60730acdf148a1b57">ss 查看网络状态</li>
+      <li data-lake-id="753ee29d0859fcd1447219d5576dd50b">linux抓包工具tcp-dump</li>
+    </ul>
+  </ul>
+  <p data-lake-id="703bb3900e311e2d4e439d1ef8413108" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 data-lake-id="a18a32644871cdc1ed5b6d1a101d2553" id="j4fp0" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">虚拟机</h2>
+  <ul data-lake-id="c0e375cdf59476d1862d300363261634" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="b9a718c098b202df53d648210088605e">parallels desktop -在mac上转windows系统好使</li>
+    <li data-lake-id="73862afad0af65d4c1fd48dbfde6bcb1">virtualBox&nbsp;</li>
+  </ul>
+  <h2 data-lake-id="f728a716cd75f47b5c3ef55566a09740" id="F7ph8" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">三大系统</h2>
+  <ul data-lake-id="b3e4658e886d22fee8ddc558d80247ab" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="3fa632f45089910fae6b22ff8f97cb95">linux</li>
+    <li data-lake-id="a0ed33de9368021fee2727b0df5a2ade">unix</li>
+  </ul>
+  <ul data-lake-id="c5da80ea0d7bfbe80be047d6db83eb9d" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="c3e33b0748ab5162f2b6384e869e7520" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="6a163331466e370662d2590ef1199a9d">macOS是open-BSD系的变种，还有netBSD， freeBSD</li>
+    </ul>
+  </ul>
+  <ul data-lake-id="6b3f08688ccffffdcc9a3bc9031af5c2" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="7dd55008c747bceaa9b34c83723997d4">windows</li>
+    <li data-lake-id="2ae5d30ba3f414b52e1d5efa39e89b05">vxwork</li>
+  </ul>
+  <ul data-lake-id="bde57866063f83f2b83a229f57a8a346" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="b8b734b674e7ac25fe53f00ce7e6e7f9" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="45a86db4795ce34dc89b58f144ef627f">数控机床</li>
+      <li data-lake-id="b63943e04ed83005b5011c3d7613a0ec">军用电台</li>
+    </ul>
+  </ul>
+  <p data-lake-id="2481ee067b4a24ff8e3704d50401ebce" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 data-lake-id="33c65cb806d2e4494f1cda7a9df863c1" id="g2vLb" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">计算机计算类型</h2>
+  <ul data-lake-id="ba0e087a7a86c528314b5465657f13c8" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="2a27af8a899f21c5f2c74231632524be">cpu密集型</li>
+    <li data-lake-id="b162929cef42f7313ce08534f3553f0a">io密集型（网卡等外设） 和cpu交互要通过主板总<em>线</em>，带宽有限</li>
+    <li data-lake-id="d929cce173148bd9d202962c7b8f9ef3">io密集型等优化，提高并发数</li>
+  </ul>
+  <p data-lake-id="bf9f1607ee1ab01e7847b38ca6c1e189" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p data-lake-id="2fe2e910562c755709247ab550ff8260" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">.exe -&gt; process -&gt;&nbsp;</p>
+  <p data-lake-id="8c29c7ce52fcd35f38f6daf63d25af69" style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">-&gt; cpu</p>
+  <p data-lake-id="72e5665e824ed06b1490609edf2097a7" style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">-&gt;memory</p>
+  <p data-lake-id="628a78e08fbd85355d3a2866e3b92afd" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p data-lake-id="9299d94e40bebdaef3e578f827f91391" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">程序代码 -&gt; 机器指令 的转换</p>
+  <p data-lake-id="7592e228f795d618551f3debb5db8c55" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">单核cpu并发原理</p>
+  <ul data-lake-id="3435561672bcb4dcf50b2a57c2574d0c" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="914a8511082657a8d34cc7a7607a260d">时间片轮转</li>
+  </ul>
+  <p data-lake-id="04354e70b62ab0185094b8462c9bd081" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">开机时，操作系统会直接接管cpu</p>
+  <p data-lake-id="7f63ad359818e8fadeb65a7486ccd1c0" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">由操作系统去调度cpu去执行 进程</p>
+  <h2 data-lake-id="0df50435caab1899eb68c2bc648e6c1b" id="Z0sox" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">手机cpu，巧妙设计，优雅的耗能设计</h2>
+  <ul data-lake-id="c5a68a781d0bf80a21f4838668eb34c4" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="43832518eedb2688c757e5f8266cd7b7">主力核</li>
+    <li data-lake-id="3983aa0c10e2c699244c75abe3a5279f">次主力核</li>
+    <li data-lake-id="f4fc99b873e9cbf2ff3342f72941f391">更小的核</li>
+  </ul>
+  <h2 data-lake-id="8152ec0abef740b65951a25af26550e6" id="DSJPA" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">进程</h2>
+  <ul data-lake-id="8ffeb5949948ac25fd74146a06959335" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="9e983c0d21a9ed1f03c95eef843d7fac">内存空间相互独立</li>
+    <li data-lake-id="5aecff849b96f71a9cf739bf5756943e">数据空间相互独立</li>
+    <li data-lake-id="1c48b5294db32947b21fcdd72e046ae0">进程里面至少一个线程</li>
+    <li data-lake-id="ae2a1206709b64df3025cfd1ca9095ad">进程是操作系统分配资源的最小单位</li>
+    <li data-lake-id="079242753e8c77c078a089318e0b0037">线程是操作系统能够进行运算调度的最小单位</li>
+    <li data-lake-id="ce504564664114b2588fcc48c426e15a">协程是用户态， 是一种用户态的轻量级线程</li>
+    <li data-lake-id="f01d903197375439bb3b4aaa47237362">nginx，nodejs，apache，都是io密集型</li>
+    <li data-lake-id="abe61023d3fc073bc482876455707b01">tomcat 是容器（cpu密集型），也是服务器（io密集型）</li>
+  </ul>
+  <ul data-lake-id="09cfc0b05a6473f0bc2252391ef272a1" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="0b14c64b0f60d90342621dc3901bb6f5" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="ae598d6d94861eb23d21b1dc3b44ac26">老版模式：多线程</li>
+      <li data-lake-id="a7173764989e911434857dc22efbf637">新版：NIO</li>
+    </ul>
+  </ul>
+  <ul data-lake-id="f4c4051d77a3540928ab650e1adb2a22" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="b304dd38bec0309134a7e01986ae3f14">io密集型应用的发展</li>
+  </ul>
+  <ul data-lake-id="e140d9922cee5b0c862a972396161b13" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="9c41b4e0bdb7d4a7b7a3227d4a6f51c8" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="68ac912e769429155a686a7433c00c58">多进程-多线程-事件驱动-协程（io密集型的大方向）</li>
+      <li data-lake-id="d6ac86e0291cd119b58a158e787eff1f">nodejs， nginx 都是事件驱动</li>
+    </ul>
+  </ul>
+  <ul data-lake-id="6405a71aabbc73a4b89a071770395789" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="05e246cc8faa884ea8f158fa94b03bce">cpu密集型应用的发展</li>
+  </ul>
+  <ul data-lake-id="6a1d26f1e7e112335628698649fc9ddd" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="c88df3f1840b5e4edacfe3dd20ec8f91" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="390d0e3b1b26020544696301681879c0">多进程-多线程</li>
+    </ul>
+  </ul>
+  <ul data-lake-id="2f44952d172d7c469bab488db2c09e15" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="1fcca05d07f11da49a2efe41a852b63d">调度和切换的时间</li>
+  </ul>
+  <ul data-lake-id="3f368e57483ea638e8da13bbd3400125" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="e727beade933081d5ea664edc3f48072" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="d3ddff7eade3f71903e4e294fe0ef472">进程》线程》协程</li>
+    </ul>
+  </ul>
+  <ul data-lake-id="b7a2a9fb669474e8437890503954e972" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="aae4f72c7fdfbf3325d1d7c15fe9b95e">一个进程被分配的资源包括：</li>
+  </ul>
+  <ul data-lake-id="3eb616a126fd994cc50bcc3d44b80b34" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="012019098adaf041b03453aabb08f683" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="3023e68c856b74a8a30ef77fc9f0727b">代码</li>
+      <li data-lake-id="07f8e36c073db8549c632a96c6faee4f">数据</li>
+      <li data-lake-id="8a84a7de2c279b2ba8453c178646f834">文件</li>
+      <li data-lake-id="4a04502509f5efcbe92a989eec7e148c">寄存器</li>
+      <li data-lake-id="3c7f50c2f716d1fdf1ba636d5e72dc47">栈</li>
+    </ul>
+  </ul>
+  <ul data-lake-id="7cc8088fa8402da591978dc3b9d78295" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="cb6de01393ac4646d99d6c8e80d798cc">线程有独立的 寄存器 &amp; 栈</li>
+    <li data-lake-id="d23990a070ed0788ec075ac1b40a2de5">linux 创建进程的两种方式</li>
+  </ul>
+  <ul data-lake-id="9e0831244d79347483f32c9233b429b9" lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ul data-lake-id="e92ef487050404ef83804ac97e04b249" lake-indent="0" style="list-style-type: circle; margin: 0px; padding-left: 23px;">
+      <li data-lake-id="2e4779f97797894a297bc1a8aa3a3af0">fork 分叉，用于同样的代码进行复制</li>
+      <li data-lake-id="56621d1c96469777a6c2458b9b5a3f36">exec， 用于不同的代码进程调用</li>
+    </ul>
+  </ul>
+  <ul data-lake-id="023892cd38f704d843c2a51ec96a5475" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="f828b73e111e2cd1cb7a6fa15aa6d7e5">共享内存</li>
+    <li data-lake-id="2eb310c7424e044f93c44e7166844586">pipe 通信， 一个进程写，另一个进程从另外一边去读</li>
+  </ul>
+  <h2 data-lake-id="834d3febe2c2e9912159ca88c35bfb5b" id="daK3C" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">操作系统的设计准则</h2>
+  <ol data-lake-id="b30f217448cbada18ec665ecd71b4bfe" start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="19d48007ff7da1c9f064f1375d1c7062">多进程，允许同时运行多个任务</li>
+    <li data-lake-id="d9c04b3c8258a167ab0c585fd65b3a82">多线程，允许一个任务分成不同的部分去运行</li>
+    <li data-lake-id="d9e4aeb12fe39bc3858bf4fe9a0351e8">提供调协机制，一方面防止进程之间和线程之间产生冲突，另一方面允许进程之间和线程之间共享资源（端口冲突）</li>
+  </ol>
+  <p data-lake-id="5531cae5a0361cfadfe55a11e0f42770" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">分治：将一个任务分成若干个小任务去执行</p>
+  <p data-lake-id="44f7442ec1a639f691346a55ccdc10d6" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p data-lake-id="83b3428aaa1b187de17989e3e5dd7ed6" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">linux常用设备</p>
+  <ul data-lake-id="0745f7bf2bd9ad3eae49cb322919f170" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="abfbf1885eb144c95503d301156a8720">0 标准输出</li>
+    <li data-lake-id="3be18789aa8be8df11a3aa4f2efdfaef">1 标准输入，键盘</li>
+    <li data-lake-id="e4f6bd2a8a79da687b9dd45ef35b48f2">2 标准错误</li>
+    <li data-lake-id="be3c6fd39451c3ce47a7046966aad6db">3</li>
+    <li data-lake-id="884fe4448e5b8ab5b9b4d83880165089">4</li>
+  </ul>
+  <p data-lake-id="d69ae9c9c8c69d9660d479631ddb71f7" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p data-lake-id="b4f148f0d2f7a9fc74d1bc032f3e8428" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">操作系统api调用</p>
+  <p data-lake-id="e611c95d12fa9f8264fb0c60bbaa7958" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">open， 返回文件句柄</p>
+  <p data-lake-id="cf1a5584945b6f247f2bcc8934b88da7" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">fopen，返回一个文件句柄的结构</p>
+  <p data-lake-id="8760ff63ed1e4d4c7b6288cf0d0e0cba" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">句柄最大数：2^32&nbsp;</p>
+  <p data-lake-id="762eb8fd98150e6a5a0fefcf614bd95b" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 data-lake-id="c7f55c7f68bbcec9db79e657cec61814" id="XwqIG" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">寄存器</h2>
+  <ul data-lake-id="8f7bdccbb89f23254a48d8a1e17ede6f" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="2c9749672724c9a22415fc317f17c4ca">现在的cpu 一般有上百个寄存器</li>
+    <li data-lake-id="d8511128f75cf156f673908fa65d5033">寄存器会放在栈里面</li>
+    <li data-lake-id="e8f47b177d94b30a9859ca9921146a71">寄存器是cpu的一部分</li>
+    <li data-lake-id="d6de39e3807adc88e3d66d72878a4d6c">专用寄存器</li>
+    <li data-lake-id="98b160181c5ce5956437c4a81c5145ae">通用寄存器</li>
+    <li data-lake-id="b8974afa4b3801b911d7b726922b782f"><span data-card-type="inline" data-lake-card="image" class="lake-card-margin-top lake-card-margin-bottom"><img data-role="image" src="https://cdn.nlark.com/yuque/0/2020/png/1123810/1588414792239-2abafcf2-2041-4e66-85df-dbbb79f6b54f.png" data-raw-src="https://cdn.nlark.com/yuque/0/2020/png/1123810/1588414792239-2abafcf2-2041-4e66-85df-dbbb79f6b54f.png" class="image lake-drag-image" alt="image.png" title="image.png" style="visibility: visible; width: 646px; height: 363px;"></span></li>
+  </ul>
+  <p data-lake-id="eaece72bce50fbddf7eb0c723ebb946a" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 data-lake-id="38d2788349b77284184bbd74e5c14053" id="p1FEN" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">持续集成</h2>
+  <ul data-lake-id="54af35c85fcda4bf65fd089a4c760f5e" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="b84c6f11186036d83149435deab80e11">提交到git</li>
+    <li data-lake-id="7dd296006696f901d6627be761866ce0">git发送消息给jenkins</li>
+    <li data-lake-id="50f7f9e490115e076eee35490af3a22f">jenkins跑测试用例，CI/CD</li>
+    <li data-lake-id="2618d9dd08342e6e95f9162bc3cc7ac2">跑完之后发布到服务器</li>
+  </ul>
+  <p data-lake-id="6c9ed96b2f5afe5ba41a048a97484460" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 data-lake-id="e7d5473981bdc03a0ee53fcb1c09dc0b" id="MGoBx" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">配置免密登录</h2>
+  <p data-lake-id="ddfe417030fd3490982aa2666ba58689" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span data-card-type="inline" data-lake-card="image" class="lake-card-margin-top lake-card-margin-bottom"><img data-role="image" src="https://cdn.nlark.com/yuque/0/2020/png/1123810/1588416584530-66f8d3f9-ab2c-4225-8fb8-e70bc9862a9e.png?x-oss-process=image%2Fresize%2Cw_1500" data-raw-src="https://cdn.nlark.com/yuque/0/2020/png/1123810/1588416584530-66f8d3f9-ab2c-4225-8fb8-e70bc9862a9e.png" class="image lake-drag-image" alt="image.png" title="image.png" style="visibility: visible; width: 746px; height: 411px;"></span></p>
+  <p data-lake-id="83ba29bd0271915a4369c590f79ad2bd" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">目标主机上修改文件权限：sudo chmod 600 authorized_keys</p>
+  <p data-lake-id="892aad32c7e11b46a5cbbc16793aa936" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">.ssh 文件所在路径： /Users/xl/.ssh 是隐藏文件</p>
+  <p data-lake-id="e7a91c8bc7e8c74542bb6acaa45fce89" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">若仍然需要密码登录，可以查看目标主机的配置文件的配置</p>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="f4e0b6e61d61a36a627bbb357c213882" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">#禁用root账户登录，如果是用root用户登录请开启</p>
+    <p data-lake-id="befdeeac4ad4864d6a1aff833a5457c1" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">PermitRootLogin yes</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="73608f2cc4d190e5b08e20393a913122" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="fe41fc6401d63cea23e0468dd35845c9" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"># 是否让 sshd 去检查用户家目录或相关档案的权限数据，</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="110aeb2bfded74bf528f062d1fa488f6" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"># 这是为了担心使用者将某些重要档案的权限设错，可能会导致一些问题所致。</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="1e82e8ba8e54a31c683abc0a25476564" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"># 例如使用者的 ~.ssh/ 权限设错时，某些特殊情况下会不许用户登入</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="02bee8a4c8db6f7930e5cefdf4dd54d8" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">StrictModes no</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="5b430878536632b3ffb2c2386ae1d414" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="8515e4ff985e6b6ccace319be3ac86ac" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"># 是否允许用户自行使用成对的密钥系统进行登入行为，仅针对 version 2。</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="032c0d937d970160b9730804cb805db4" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"># 至于自制的公钥数据就放置于用户家目录下的 .ssh/authorized_keys 内</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="26d48d0e8e11bf26e3cbf9dbf99947f2" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">RSAAuthentication yes</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="45d3ed4f59ba50b8d0a5f7686e1f7e81" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">PubkeyAuthentication yes</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="ba796e0127dc31ef932493a298b5f155" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">AuthorizedKeysFile .ssh/authorized_keys</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="c17e65ce509ff9953e273b14fc919a69" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="3673e8197b39be3a970829f33ed93938" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"># 有了证书登录了，就禁用密码登录。</p>
+  </blockquote>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="f77a02daed236e7e56a8f4423c097d8f" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">PasswordAuthentication no</p>
+  </blockquote>
+  <p data-lake-id="b21f903265ef035a7a83da28fbd0112f" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p data-lake-id="a32eddc443e460a1d430270f0042c6ab" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <blockquote style="margin-top: 5px; margin-bottom: 5px; padding-left: 1em; margin-left: 0px; border-left: 3px solid rgb(238, 238, 238); opacity: 0.6;">
+    <p data-lake-id="a21909706259c30a0afbe1484aca8168" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><a href="https://blog.csdn.net/silentwolfyh/article/details/83656101" target="_blank">https://blog.csdn.net/silentwolfyh/article/details/83656101</a></p>
+  </blockquote>
+  <p data-lake-id="6350fabade73f0aed9388cda350a4751" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p data-lake-id="9136fd2235dfb3d1e6f0c41eb6b91b61" style="font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h1 data-lake-id="37f6af1b10f27bc0d0d3160c5eb50a01" id="CX5CW" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">pm2</h1>
+  <h2 data-lake-id="6566971019fbc95c10818be2d066308b" id="hscIm" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">原理</h2>
+  <ul data-lake-id="4d18db2c7f57a9516d3915daef8bd9b4" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="2313ca370a6f9226c766199343277565">一个管理进程，多个子进程</li>
+    <li data-lake-id="8ded0a37a76698923e497d5eb5588f48">采用exec 调起子进程</li>
+    <li data-lake-id="e8388ee4d5dbe9bfe0d9ed6ca08ba26f">工作进程都是子进程</li>
+  </ul>
+  <h2 data-lake-id="ad783ebca3c7b99c2b74e6a0bf72c322" id="Sin08" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">pm2如何管理node进程</h2>
+  <ul data-lake-id="4beb8bb8c0d84374b955d93e9d327bd4" lake-indent="0" style="list-style-type: disc; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 1.74; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li data-lake-id="08c8040813a74dc95cb34256d15f5a1b">pm2 是利用linux对进程对管理机制</li>
+  </ul>
+</div>
