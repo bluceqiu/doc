@@ -4,10 +4,4 @@
 --> 
 # Welcome! 🚀😀👹🔥🌭
 
-<style>
-    body: {
-        width: 1200px;
-        margin: 0 auto;
-    }
-</style>
 <a href="./docs/函数式编程.html">函数式编程</a>
