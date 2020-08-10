@@ -1,0 +1,22 @@
+{
+  "name": "docs.github.io",
+  "version": "1.0.0",
+  "description": "<!--  * @Author: xiaolong.qiu  * @Date: 2020-05-18 09:49:25 -->",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluceqiu/docs.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluceqiu/docs.github.io/issues"
+  },
+  "homepage": "https://github.com/bluceqiu/docs.github.io#readme"
+}
